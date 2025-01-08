@@ -112,7 +112,7 @@ body h2{
 
 #face:hover {
     background-color: green; 
-    transform: scale(4);
+    transform: scale(5);
     transition: all 3s ease;
 }
 
