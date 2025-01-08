@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ae6677;
+}
+
+body h2{
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+#face {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: yellow; 
+    border-radius: 50%;
+    animation: moveRandom 5s infinite ease-in-out;
+    margin-top:200px;
+}
+
+@keyframes moveRandom {
+    0% {
+        top: 50%;
+        left: 10%;
+    }
+    25% {
+        top: 50%;
+        left: 80%;
+    }
+    50% {
+        top: 50%;
+        left: 50%;
+    }
+    75% {
+        top: 50%;
+        left: 20%;
+    }
+    100% {
+        top: 50%;
+        left: 10%;
+    }
+}
+
+
+
+
+
+#eyes #eye1, #eyes #eye2 {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#eye1 {
+    margin-left: 5px; 
+}
+
+#eye2 {
+    margin-left: 70px; 
+}
+
+#iris1, #iris2 {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+#mouth {
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 50%;
+    margin-left: 10%;
+}
+
+#tongue {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-color: #f76c6c;
+    border-radius: 0 0 50% 50%;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: tongueMove 1s ease-in-out infinite;
+}
+
+@keyframes tongueMove {
+    0% {
+        top: 14px;
+    }
+    50% {
+        top: 5px;
+    }
+    100% {
+        top: 14px;
+    }
+}
+
+#face:hover {
+    background-color: green; 
+    transform: scale(4);
+    transition: all 3s ease;
+}
+
+#face:hover #eye1, #face:hover #eye2 {
+    transition: all 3s ease; 
+    background-color: white; 
+}
+
+#face:hover #iris1, #face:hover #iris2 {
+    transition: all 3s ease; 
+    background-color: green; 
+}
+
+#face:hover #mouth {
+    background-color: #00ff00; 
+    width: 110px; 
+}
+
+#face:hover #tongue {
+    background-color: #ff9999; 
+}
+
+#face:hover #eye1 {
+    margin-left: -15px;
+}
+
+#face:hover #eye2 {
+    margin-left: 105px; 
+}
